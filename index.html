@@ -100,6 +100,14 @@
   .card:hover{border-color:rgba(129,140,248,.45);transform:translateY(-3px)}
   .card .tag{font-size:.7rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:12px}
   .card h3{font-weight:700;font-size:1.25rem;letter-spacing:-.2px;margin-bottom:10px}
+  .brand-logo{display:flex;align-items:center;gap:9px;margin-bottom:12px;min-height:26px}
+  .bw{font-family:'Inter',sans-serif;font-weight:700;font-size:1.32rem;letter-spacing:-.4px;line-height:1}
+  .bw .bw-w{color:var(--text)}
+  .bw .bw-teal{color:#2dd4bf}
+  .bw .bw-c2v{background:linear-gradient(90deg,#34d3a6,#818cf8);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .bw-vg{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-weight:700;font-size:1.14rem;letter-spacing:-.3px;line-height:1}
+  .bw-vg .bw-w{color:var(--text)}
+  .bw-vg .bw-orange{color:#f9844a}
   .card p{color:var(--muted);font-size:.96rem;line-height:1.62;flex:1;max-width:560px}
   .card .visit{margin-top:16px;font-size:.88rem;font-weight:600;color:var(--accent)}
   .card.feature{grid-column:1/-1;background:linear-gradient(135deg,var(--surface),rgba(99,102,241,.07));border-color:rgba(129,140,248,.3)}
@@ -235,29 +243,40 @@
     <h2>Things I've made</h2>
     <p class="lead" style="margin-bottom:30px">Things I've actually built, not just advised on. Governed AI, and the thinking underneath it.</p>
     <div class="built-grid">
-      <a href="https://policyproof.app" target="_blank" rel="noopener" class="card feature">
-        <div class="tag">Live · AI product</div>
-        <h3>PolicyProof</h3>
-        <p>A second-opinion check on insurance claim denials for independent agencies. It reads the full policy, tests the carrier's denial against the actual coverage and the state's unfair-claims statutes, and drafts a pushback letter when the denial doesn't hold up. The guardrails are the whole point: every policy line it quotes is verified in code against the source document, it's blocked from citing any law it can't confirm, the agent always makes the final call, and nothing is ever stored.</p>
-        <span class="visit">policyproof.app →</span>
-      </a>
       <a href="https://concepttovalue.com" target="_blank" rel="noopener" class="card">
-        <div class="tag">AI product</div>
-        <h3>Concept to Value</h3>
-        <p>A decision instrument that turns a boardroom whim into a funded, governed, measured MVP: agent suitability, a sequenced roadmap, a tailored governance starter, and success metrics with kill and scale gates. Built on NIST AI RMF and BCG's 10/20/70.</p>
+        <div class="tag">Live · Enterprise AI suite</div>
+        <div class="brand-logo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="13" width="4" height="8" rx="1.2" fill="#34d3a6"/><rect x="10" y="8" width="4" height="13" rx="1.2" fill="#56d8c0"/><rect x="17" y="3" width="4" height="18" rx="1.2" fill="#818cf8"/></svg>
+          <span class="bw"><span class="bw-w">Concept</span><span class="bw-c2v">ToValue</span></span>
+        </div>
+        <p>An oversight layer that designs your AI operating model, plus three execution tools — Prioritize, Assess, and Monitor — that run the work inside it. One coherent path from boardroom idea to measured enterprise AI transformation.</p>
         <span class="visit">concepttovalue.com →</span>
       </a>
-      <a href="https://velocitygovernance.com" target="_blank" rel="noopener" class="card">
-        <div class="tag">Framework</div>
-        <h3>Velocity Governance</h3>
-        <p>An open framework for keeping engineering and practice quality intact as AI accelerates development. 50 protocols across 6 SDLC stages and 5 maturity levels. Open source.</p>
-        <span class="visit">velocitygovernance.com →</span>
+      <a href="https://policyproof.app" target="_blank" rel="noopener" class="card">
+        <div class="tag">Live · AI product</div>
+        <div class="brand-logo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.2l7.5 2.8v6c0 4.7-3.3 8-7.5 10.3C7.8 19 4.5 15.7 4.5 11V5L12 2.2z" fill="#0d9488"/><path d="M8.4 12l2.6 2.6 4.6-5.2" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          <span class="bw"><span class="bw-w">Policy</span><span class="bw-teal">Proof</span></span>
+        </div>
+        <p>A second-opinion check on insurance claim denials. It reads the full policy, tests the carrier's denial against the coverage and the state's unfair-claims statutes, and drafts a pushback letter when it doesn't hold up. Every quoted line is verified in code; nothing is ever stored.</p>
+        <span class="visit">policyproof.app →</span>
       </a>
       <a href="https://getconcordance.com" target="_blank" rel="noopener" class="card">
-        <div class="tag">Platform</div>
-        <h3>Concordance</h3>
-        <p>The platform that puts the framework to work: evidence-based governance scoring from toolchain data, mapped to SOC 2, ISO 27001, NIS2, and the EU Cyber Resilience Act, with an AI Sentinel lens for AI-accelerated teams.</p>
+        <div class="tag">Live · Platform</div>
+        <div class="brand-logo">
+          <svg width="26" height="22" viewBox="0 0 30 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="7.2" stroke="#818cf8" stroke-width="1.7"/><circle cx="18" cy="12" r="7.2" stroke="#6366f1" stroke-width="1.7"/></svg>
+          <span class="bw"><span class="bw-w">Concordance</span></span>
+        </div>
+        <p>Evidence-based engineering-practice scoring from real toolchain data, mapped to SOC 2, ISO 27001, NIS2, and the EU Cyber Resilience Act, with an AI Sentinel lens for AI-accelerated teams.</p>
         <span class="visit">getconcordance.com →</span>
+      </a>
+      <a href="https://velocitygovernance.com" target="_blank" rel="noopener" class="card">
+        <div class="tag">Open framework</div>
+        <div class="brand-logo">
+          <span class="bw-vg"><span class="bw-w">velocity</span><span class="bw-orange">governance</span></span>
+        </div>
+        <p>The open thesis underneath Concordance: how to keep engineering practice quality intact as AI accelerates delivery. 50 protocols across 6 SDLC stages and 5 maturity levels.</p>
+        <span class="visit">velocitygovernance.com →</span>
       </a>
     </div>
   </div>
